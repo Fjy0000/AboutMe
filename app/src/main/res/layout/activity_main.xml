@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_Name"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:text="@string/jun_yi"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size" />
+
+    <EditText
+        android:id="@+id/tf_Name"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="What is your Nickname?"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDone"
+        style="@style/myStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Done" />
+
+    <ImageView
+        android:id="@+id/star"
+        style="@style/myStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/starImage"
+        android:padding="8sp"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvBio"
+            style="@style/myStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:text="@string/Bio"
+            android:textSize="@dimen/text_size" />
+    </ScrollView>
+
+</LinearLayout>
